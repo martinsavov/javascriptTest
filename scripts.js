@@ -1,4 +1,3 @@
-
 /*Arrays!
 function restaurantTip(moneySpent){
     var percentage;
@@ -129,37 +128,3 @@ console.log(john, mike);
 
  }
  */
-var percentage;
-
-function restaurantTip(bills){
-
-    if(bills <= 50){
-        percentage = 0.2;
-    } else if(bills >= 50 && bills <= 200){
-        percentage = 0.15;
-    } else {
-        percentage = 0.1;
-    }
-    return bills * percentage;
-}
-
-
-var bills = [124, 48, 268, 180, 42];
-for (var i =0; i < restaurantTip(bills[4]); i++) {
-    var tips =  restaurantTip(bills[i]);
-    console.log(tips);
-
-}
-
-var totalAmount=[];
-for (var i = 0; i < (bills[4] + tips[4]); i++){
-     totalAmount[i];
-}
-console.log(totalAmount);
-//  [bills[0] + tips[0],
-//                     bills[1]+ tips[1],
-//                     bills[2] + tips[2],
-//                     bills[3] + tips[3],
-//                     bills[4] + tips[4]];
-//                     console.log(tips);
-//                     console.log(totalAmout);
