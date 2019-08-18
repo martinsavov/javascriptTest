@@ -128,3 +128,23 @@ console.log(john, mike);
 
  }
  */
+
+function tipCalculator(bills) {
+    var tip;
+    if (bills < 50) {
+        tip = bills * 0.2;
+    } else if (bills > 50 && bills <= 200) {
+        tip = bills * 0.15;
+
+    } else {
+        tip = bills * 0.1;
+    }
+
+    return tip;
+
+}
+
+var bill = [124, 48, 268];
+var tips = [tipCalculator(bill[0]), tipCalculator(bill[1]), tipCalculator(bill[2])];
+var totalAmount = [(bill[0] + tips[0]), (bill[1] + tips[1]), (bill[2] + tips[2])];
+console.log(totalAmount, tips);
