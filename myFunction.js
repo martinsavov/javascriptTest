@@ -10,7 +10,7 @@ let a = 'node-js';
 console.log(a.split('o').pop()); */
 
 function solve(){
- console.log('test');
+ console.log('test1');
 }
 solve();
 
